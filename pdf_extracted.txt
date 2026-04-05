@@ -1,0 +1,498 @@
+Challenge Engenharia de 
+Software 2º Ano – Agosto / 2025 
+Hospital São Rafael 
+Cirurgias com acolhimento e todos os recursos hospitalares. 
+Referência em cirurgias eletivas ou de curta internação, com todos 
+os recursos da medicina moderna e pertinho de você. 
+Hospital São Rafael 
+1 1982 — Fundação 
+O Hospital São Rafael nasceu com o objetivo de se tornar 
+referência no mercado de cirurgias eletivas com curto 
+período de internação. 2 Trajetória de Sucesso 
+Após uma trajetória de sucesso e reconhecimento 
+profissional, conquistados por meio de serviços de 
+excelência e atenção diferenciada a pacientes e médicos, 
+o hospital passou a se chamar HSR – Medicina e 
+Bem-Estar , em 2011. 3 Hoje 
+O hospital se esforça para manter seus altos padrões de 
+saúde e continua a fornecer serviços de alto nível para 
+seus pacientes e profissionais médicos. 
+O Hospital São Rafael está registrado sob a razão social Centro Médico Especializado LTDA , CNPJ: 50.958.990/0001-43, não 
+possuindo outras unidades, ainda que usem o mesmo nome, fora da Cidade de São Paulo. 
+Introdução 
+Propósito do Hospital 
+Oferecer serviços éticos e de qualidade, priorizando o atendimento humanizado 
+e atencioso. Pacientes, equipe médica e colaboradores são tratados com 
+respeito, agilidade e transparência. 
+Parceria com a FIAP 
+Com parceria com a FIAP, propomos um desafio que vai reduzir nossas 
+dificuldades ao máximo. 
+Sobre o Projeto 
+A ideia do projeto é que seja desenvolvido com paciência e determinação, 
+trabalho em equipe e claro com responsabilidade e compromisso, pois isso 
+agrega um valor essencial para todos. 
+Desafio – Desenvolvimento de um CRM de Vendas 
+Leads 
+Transformar formulários recebidos via Instagram, 
+Facebook, Google, TikTok em contas com: 
+•Nome 
+•Telefone 
+•E-mail 
+•Canal de entrada 
+•Procedimento de interesse 
+•Preferência por algum médico Cadastros 
+Médicos 
+•Nome 
+•CRM 
+•Telefone 
+•E-mail 
+•Procedimentos 
+atendidos 
+•Data de 
+nascimento 
+•CFPs Colaboradores 
+•Nome 
+•CPF
+•E-mail 
+•Data de 
+nascimento Pacientes 
+•Nome 
+•CPF
+•Data de 
+nascimento 
+•Sexo 
+•Peso e altura 
+(calcular IMC) 
+•E-mail 
+•Telefone 
+•Por onde nos 
+conheceu 
+Agendas, Agenda Extra e Bloqueio de Agenda 
+•Nome do médico 
+•Dia de atendimento 
+•Horário de início e fim 
+•Tempo de cada consulta 
+•Motivo do bloqueio Restrição de Duplicidade 
+Restringir qualquer cadastro com alguma dessas informações para não 
+gerar duplicidade. 
+Funcionalidades do CRM 
+Agendamento 
+Considerar: 
+•Paciente 
+•Data 
+•Hora 
+•Procedimento 
+•Médico 
+•Status (agendado, atendido, falta, abandono, reagendado, 
+cancelado) 
+Histórico 
+Histórico da conta do paciente por área: 
+• Agendamento 
+• Vendas 
+• Pós-vendas 
+• Recepção 
+• Mensagens enviadas 
+Comunicação 
+Disparo de mensagens / WhatsApp automáticas ou manuais. 
+Exemplo: confirmações de agendamento. 
+Performance de Atendimento 
+• Tempo de entrada do lead até o primeiro atendimento 
+• Tempo após início das tratativas 
+• Alerta com tempo mínimo de atendimento 
+• Alteração de status vinculado ao perfil do colaborador sempre que 
+iniciar ou acessar um lead 
+• Distribuição automática de leads por operador logado 
+• Ao deslogar redistribuir automaticamente os não atendidos 
+• Conversão por médico (Atendimento × Vendas de contrato) 
+Orçamento, SAC e Dashboard 
+Orçamento das Vendas e Acompanhamentos 
+• Indicação 
+• Médico 
+• Orçamento 
+• Prazo de retorno 
+• Status (aberto, em andamento, contrato fechado, encerrado) 
+• Motivo ou observação 
+SAC — Cadastro de Reclamações 
+• Paciente 
+• Data e hora 
+• Área envolvida 
+• Prazo de resposta 
+• Motivo 
+Tratativas 
+• Data 
+• Hora 
+• Setor 
+• Tratativa 
+Solução 
+• Data 
+• Hora 
+• Solução 
+• Anexar documentos • Alerta com tempo de resposta Dashboard com Relatórios de Acompanhamento 
+• Login e logout dos colaboradores 
+• Atendimentos realizados pelos colaboradores 
+• Mensagens enviadas 
+• Relatório para ativos de acordo com procedimento ou 
+status do agendamento 
+• Agendas médicas (ociosidade, volume) 
+• Relatório de atendimento considerando filtros: médico, 
+colaborador, data, status, procedimento 
+• Importar / exportar bases em Excel 
+Interligação com o sistema Tasy e Inteligência 
+Artificial  para realizar agendamentos e informações. 
+Regras do Desafio 
+1Formação dos Grupos 
+Os grupos devem ser formados por 3 a 5 integrantes, no máximo .
+2Mesma Turma 
+Os grupos devem ser formados por alunos da mesma turma. 
+3Liderança 
+Cada grupo deverá ter um líder  para uma boa comunicação. 
+4Troca de Grupo 
+Não é possível trocar de grupo durante a Challenge no mesmo semestre. 
+5Exceção de Troca 
+As trocas podem ocorrer na virada de semestre sob análise do(s) Scrum Master. 
+Responsabilidades dos Alunos 
+Regulamento e Entregas 
+Ter ciência do regulamento e cumprir as entregas 
+conforme orientação dos professores. 
+Organização do Grupo 
+Organização de gerenciamento do grupo, como 
+planejamento e prazos das entregas. 
+Qualidade das Entregas 
+Atentar-se à qualidade das entregas. 
+Canais de Comunicação 
+Atentar-se aos canais de comunicação e respeitar a 
+hierarquia da Challenge (Scrum Master são nossos 
+coordenadores de Challenge). 
+Responsabilidades dos Professores 
+Orientação do Projeto 
+Orientar o desenvolvimento do projeto em suas disciplinas. 
+Detalhamento das Entregas 
+Explicar detalhadamente a entrega da sua disciplina e os critérios de avaliação. 
+Qualidade 
+Atentar-se à qualidade das entregas. 
+Correção 
+Corrigir as entregas de acordo com os critérios estabelecidos. 
+Feedback 
+Disponibilizar nota com feedback. 
+Responsabilidades do(s) Scrum Master 
+Comunicação 
+Comunicação entre alunos, 
+professores e empresa parceira. 
+O aluno não deve entrar em 
+contato direto com o cliente. Gestão dos Grupos 
+Manter dados dos grupos 
+atualizados. Regulamento 
+Manter o regulamento da 
+Challenge atualizado. 
+Eventos 
+Agendar eventos com a empresa parceira. Feedback 
+Disponibilizar nota com feedback. 
+ATENÇÃO 
+O grupo que violar qualquer regra terá sua entrega invalidada e 
+a nota da sprint será zerada em todas as disciplinas. 
+SPRINT 3 
+DATA ENTREGA: 
+05/04/2026 SPRINT 4 
+DATA ENTREGA: 
+10/05/2026 
+AGILE METHODOLOGY WITH SQUAD FRAMEWORK 
+1. Reﬁno da Visão do Produto (denotar mudanças realizadas) + Descrição da Solução (20% da nota ﬁnal) 
+2.  Backlog reﬁnado (coerente com o diagrama), priorizado (emprego do Método MoSCoW) e  estimado em Story Points utilizando a técnica de Planning 
+Poker (destacando as  funcionalidades do MVP)  (40% nota ﬁnal) 
+3.  Protótipo (podem ser esboços) de no mínimo 3 telas com comentários sobre a UX . Proposta (Adequação ao público-alvo, preocupação com facilidade 
+de aprendizado, de  operação, navegabilidade, UX Writing...) . (40% nota ﬁnal) 
+Sprint 4 Sprint 3 
+1. Documentação da Especiﬁcação funcional detalhada das 2 principais funcionalidades da solução (excluindo funcionalidade de Login) (20% da nota ﬁnal) 
+2. Diagrama de Casos de Uso atualizado (20% da nota ﬁnal) 
+3. Cerimônia da restrospectiva: Para saber o que deu certo no Projeto, o que não deu e as lições aprendidas para os próximos projetos. (10% da nota ﬁnal) 
+4. Report da Review do escopo do projeto: Comparação da solução proposta x solução entregue, com justiﬁcativas (10% da nota ﬁnal) 
+5. Encerramento do projeto no formato de Retrospectiva: Autoavaliação do trabalho do grupo (10% da nota ﬁnal) 
+6. Quadro Kanban da última versão.(10% da nota ﬁnal) 
+7. Vídeo de no máximo 3 min evidenciando a construção do MVP (ao menos funcionalidades básicas que podem ser testadas e validadas pelo cliente. (20% da nota 
+ﬁnal) 
+
+AR-VR MODELLING AND SIMULATION 
+SPRINT 3 
+Olá Pessoal ! 
+Chegou a hora de conceituarmos o que nosso usuário vai visualizar. Nessa terceira entrega, vocês devem transportar para a 
+UNREAL ENGINE toda a experiência criada para o cliente. 
+Na Unreal, você irá recriar a cena com todo o cenário e com pelo menos 3 objetos modelados por voces (na SPRINT1). Tudo 
+pode estar sem texturas ou materiais nesta terceira entrega. 
+É autorizado utilizar modelos 3D baixados da Web. 
+Nessa entrega, vocês devem entregar no mínimo 13 imagens de ângulos diferentes do cenário que o remeta a um ambiente 
+hospitalar e claro, que tenha  relação à proposta de voces. 
+Estrutura da cena (Paredes, Piso e Teto) - [20 pontos] 
+3 objetos modelados por vocês - [20 pontos] 
+Composição de cenário (elementos que façam o cenário parecer real) - [30 pontos] 
+Apresentação das 13 imagens (quanto mais criativa, melhor) - [30 pontos] 
+ENTREGA: Apresentação em .PDF COM NOME E RM - NOME DOS INTEGRANTES NA CAPA!!!! 
+
+AR-VR MODELLING AND SIMULATION 
+SPRINT 4 
+Olá Pessoal ! 
+Chegou a hora de conceituarmos o que nosso usuário vai visualizar. Nessa quarta entrega, vocês devem completar na 
+UNREAL ENGINE toda cena criada por vocês. 
+Na Unreal, você irá completar o cenário e os 3 objetos modelados por vocês. Tudo deve estar COM texturas e materiais, bem 
+como as ações aprendidas em aula. 
+É autorizado utilizar modelos 3D baixados da Web. 
+Nessa entrega, vocês devem entregar um vídeo ( min 2 minutos, máximo: 4 minutos ) do cenário. 
+Estrutura ﬁnal da cena (paredes, piso e teto todos com materiais e acabamentos) - [20 pontos] 
+3 objetos modelados por vocês (ﬁnalizados com materiais) - [20 pontos] 
+Composição de cenário (elementos que façam o cenário parecer real) - [30 pontos] 
+Criatividade e detalhamento do vídeo - [30 pontos] 
+ENTREGA: Vídeo deve ser “UPPADO” no YouTube e na legenda deve ter NOME E RM - NOME DOS INTEGRANTES!!!! TODOS 
+INTEGRANTES. 
+DOMAIN DRIVEN DESIGN – JAVA/Spring/JDBC e Desenvolvimento da API 
+Sprint 3 - Mapeamento com Banco de Dados e Estabelecimento das Regras de Negócio (Entrega em 05/04/2026): 
+Essa etapa do projeto visa criar toda a estrutura de entrada de dados(API/Scanner) que será utilizada como suporte ao projeto do CRM, sua 
+modelagem, indicação dos domínios, suas regras de negócio e testes iniciais (hardcoded) de integração dos serviços indicados. 
+Espera-se dessa etapa o comprimento dos seguintes quesitos que também compõem os critérios de avaliação: 
+-Estabelecer mapeamento com o banco de dados, conforme indicadas na disciplina Database Design. No mínimo duas entidades de 
+negócio; [20 pontos] 
+-Estabelecer integração com o Banco de Dados escolhido; [20 pontos] 
+-Criação das regras de negócio baseadas em serviços, separadas de acordo com cada responsabilidade. No mínimo três métodos com 
+regras funcionais. Aplicar todos os patterns necessários aprendidos em aula de acordo com a solução proposta; [30 pontos] 
+-Aplicar boas práticas de Exception customizadas para a aplicação; [10 pontos] 
+-Testes iniciais em Zona de Testes no arquivo Application ou método no arquivo main . [10 pontos] 
+Formato de Entrega: 
+-Arquivo ZIP, contendo a pasta do projeto JAVA. [90 pontos] 
+-Arquivo PDF que indique o nome e RM dos integrantes, e uma breve descrição da solução proposta a aplicação e suas principais 
+funcionalidades, contendo no mínimo 20 linhas. [10 pontos] 
+DOMAIN DRIVEN DESIGN – JAVA/Spring e Desenvolvimento da API 
+Sprint 4 - Exposição das Regras de Negócio em JSON e Views  (Entrega em 10/05/2026): 
+Essa etapa do projeto visa expor todos os recursos pensados para a API, com a indicação dos endpoints para formato JSON e também 
+endpoints visuais com páginas server-side. 
+Espera-se dessa etapa o comprimento dos seguintes quesitos que também compõem os critérios de avaliação: 
+-Separar os endpoints por domínio, implementando JSONControllers (saída JSON) e ViewControllers com Thymeleaf, garantindo que os 
+links dos endpoints estejam disponíveis nas páginas, que também devem servir como documentação de uso; [20 pontos] 
+-Garantir o uso correto de nomenclaturas dos endpoints, códigos de retorno e verbos HTTP adequados; [20 pontos] 
+-Todas as funcionalidades que foram propostas, entregues e operacionais. [20 pontos] 
+-Seguir todas as boas práticas trabalhadas em sala de aula, como nomenclaturas, tratamentos de exceçoes, padrões de projetos e etc. 
+[20 pontos] 
+Formato de Entrega: 
+-Arquivo ZIP, contendo a pasta do projeto JAVA. [80 pontos] 
+-Arquivo PDF que indique o nome e RM dos integrantes, e uma breve descrição da solução proposta a aplicação e suas principais 
+funcionalidades, contendo no mínimo 20 linhas. O Documento também deve conter prints de cada uma das páginas que compõem a 
+solução.  [10 pontos] 
+-Vídeo explicativo do código em execução passando por todas as funcionalidades. Formato da entrega a critério do grupo. 
+(YouTube, MP4, etc).  [10 pontos] 
+DATA SCIENCE AND STATISTICAL COMPUTING 
+Sprint 3 
+1 – Preparação e integração dos dados 
+Importar os dados gerados no banco de dados do projeto para análise em Python. 
+Realizar: 
+• tratamento de valores ausentes 
+ • padronização de formatos de datas 
+ • veriﬁcação de duplicidades 
+ • criação de variáveis derivadas quando necessário 
+2 – Análise exploratória dos dados 
+Realizar análise estatística e visualização das principais variáveis do CRM. 
+Explorar pelo menos: 
+• distribuição de pacientes por procedimento 
+ • distribuição de atendimentos por médico 
+ • quantidade de leads por canal de entrada 
+ • tempo médio entre lead e primeiro atendimento 
+ • taxa de comparecimento (presença vs falta) 
+Aplicar:  média;  mediana;  desvio padrão;  quartis;  análise de outliers 
+Bibliotecas sugeridas: 
+pandas 
+ numpy 
+Bibliotecas sugeridas: 
+pandas 
+ matplotlib 
+ seaborn 
+DATA SCIENCE AND STATISTICAL COMPUTING 
+Sprint 3 
+3 – Construção de indicadores de negócio 
+Os grupos devem calcular pelo menos 5 indicadores relevantes para o hospital, 
+como por exemplo: 
+Taxa de conversão de leads em pacientes 
+ Tempo médio de resposta ao lead 
+ Procedimentos mais procurados 
+ Médicos com maior volume de atendimentos 
+ Taxa de cancelamento de consultas 
+Cada indicador deve conter: 
+• explicação da métrica 
+ • fórmula utilizada 
+ • interpretação do resultado 
+Entregáveis Sprint 3 
+Notebook em Python contendo: 
+• carregamento dos dados 
+ • limpeza e preparação dos dados 
+ • análise exploratória 
+ • visualizações gráﬁcas 
+ • cálculo dos indicadores 
+Formato da entrega: 
+Arquivo .ipynb + PDF exportado do notebook 
+
+DATA SCIENCE AND STATISTICAL COMPUTING 
+Sprint 4 
+1 – Preparação dos dados para modelagem 
+Selecionar variáveis relevantes para a construção dos modelos. 
+Aplicar: 
+• tratamento de dados categóricos 
+ • normalização ou padronização 
+ • divisão entre treino e teste 
+2 – Construção de modelo preditivo 
+Construir pelo menos um modelo preditivo  que responda a uma pergunta de negócio relevante. 
+Sugestões: 
+Prever se um lead irá se tornar paciente 
+ Prever probabilidade de falta em consultas 
+ Prever demanda por procedimento 
+ Prever tempo de atendimento 
+Modelos sugeridos:  Regressão logística;  Árvore de decisão;  Random Forest;  KNN 
+Bibliotecas sugeridas: 
+scikit-learn 
+ pandas 
+ numpy 
+DATA SCIENCE AND STATISTICAL COMPUTING 
+Sprint 4 
+3 – Avaliação do modelo 
+Avaliar o desempenho do modelo utilizando métricas adequadas. 
+Exemplos: 
+Acurácia 
+ Precisão 
+ Recall 
+ F1-score 
+ Matriz de confusão 
+Interpretar os resultados e discutir possíveis melhorias. 
+4 – Geração de insights para o hospital 
+Os grupos devem apresentar pelo menos 3 recomendações estratégicas , baseadas na 
+análise e no modelo criado. 
+Exemplos: 
+• quais canais geram leads mais qualiﬁcados 
+ • quais médicos apresentam maior conversão 
+ • quais procedimentos possuem maior demanda 
+ • quais fatores aumentam o risco de cancelamento 
+Entregáveis Sprint 4 
+Notebook em Python contendo: 
+• preparação dos dados 
+ • construção do modelo 
+ • avaliação do modelo 
+ • interpretação dos resultados 
+Além disso, os grupos deverão 
+apresentar: 
+Uma apresentação em PowerPoint com 
+até 10 slides , contendo: 
+• problema analisado 
+ • abordagem utilizada 
+ • principais resultados 
+ • insights estratégicos para o hospital 
+
+DATABASE DESIGN 
+Atividade Prática – CRM – Hospital São Rafael 
+Contexto e Objetivo: O Hospital São Rafael (HSR) está desenvolvendo um novo CRM de Vendas para otimizar o atendimento, agendamentos 
+e acompanhamento de pacientes. O objetivo desta atividade é projetar e instanciar o banco de dados relacional/físico que suportará este 
+sistema, garantindo o armazenamento seguro e eﬁciente das informações. 
+O trabalho foi dividido em duas fases de entrega para alinhar-se ao cronograma da Challenge, sendo elas: 
+Sprint 3  – focará na implementação física das tabelas (Módulo DDL) e inserção de dados (Módulo DML) feitas no Oracle .
+       Sprint 4  – focará nas consultas gerenciais (Módulo DQL) feitas no Oracle. 
+SPRINT 3 – Estrutura (DDL) e Massa de Dados (DML) 
+Data de entrega : 05/04/2026 
+Documentação e Requisitos Técnicos :
+ 
+Cada item tem um valor especíﬁco, distribuído conforme descrito abaixo. A soma dos itens totalizará 100 pontos. 
+ 
+1.    Apresentação do Projeto. Os itens abaixo devem constar na documentação: ( 10 pontos )
+·      Capa com o nome dos integrantes, nome da equipe e nome da solução. 
+·      Sumário. 
+·      Objetivo e escopo do projeto: descrever a solução proposta pelo grupo de forma objetiva. 
+·      Breve descrição das principais funcionalidades da solução. 
+DATABASE DESIGN 
+2. Diagrama do Modelo Relacional feito no Data Modeler da Oracle : (30 pontos )
+Todas as tabelas, seus atributos, chaves primárias, chaves estrangeiras, relacionamentos e suas cardinalidades devem estar 
+representados no diagrama. 
+Atenção : MÍNIMO DE 5 TABELAS 
+3. Script – D.D.L.   – Estrutura do Banco (30 pontos )
+Criar as tabelas de acordo com o Modelo Relacional apresentado no item 2, aplicando as restrições necessárias (Chaves primárias – PK, 
+Chaves Estrangeiras – FK, Not Null, Unique e garantindo a integridade referencial. 
+Gerar o script com as instruções SQL-DDL (create table, alter table, create sequence ou autonumeração deﬁnido pelo Identity, comment), 
+conforme o modelo de dados relacional/lógico completo com todas as tabelas, constraints, sequences e comments (comentários 
+descritivos das tabelas e das colunas). 
+Regra de restrição : É obrigatório implementar constraints (Ex: UNIQUE) para impedir o cadastro de informações duplicadas no sistema. 
+4. Script – D.M.L.  – popular, atualizar o banco de dados criado para testar as regras de negócio.  (30 pontos) 
+INSERT : Popular todas as tabelas com, no mínimo, 5 a 10 registros  ﬁctícios, porém, realistas e consistentes. Caso haja exceções, devem 
+ser adequadamente justiﬁcadas para tabelas cujo domínio tenha menos de cinco ocorrências. 
+UPDATE/DELETE : Criar scripts demonstrando a evolução de um processo, como a alteração do status de um agendamento (ex: de 
+“agendado” para “atendido” ou “canelado”) e a atualização de um status de orçamento. 
+Gerar o script com as instruções SQL-DML – Insert, Update e Delete. 
+DATABASE DESIGN 
+Formato de Entrega da Sprint 3 :
+·  Os itens 1 e 2  devem constar no arquivo pdf. 
+·  Os itens 3 e 4  (Scripts  SQL – DDL  e DML ) devem constar em arquivos texto (editáveis com "Bloco de Notas"    
+      ou editor equivalente para código-fonte), com extensão ".SQL", devidamente documentado. 
+ 
+Todos os arquivos devem ser compactados em um único arquivo ".zip", que será entregue por um integrante do grupo via Microsoft 
+Teams. 
+OBS : Não inclua links para diagramas em nuvem. 
+
+DATABASE DESIGN 
+SPRINT 4 – Consultas e relatórios (DQL) 
+Data de entrega : 10/05/2026 
+Com a estrutura montada e populada, a segunda fase exige a elaboração de consultas avançadas para suprir as necessidades de relatórios 
+do Dashboard de Acompanhamento  da gestão do hospital. 
+1. Apresentação do Projeto. Os itens abaixo apresentados na Sprint 3 devem constar na documentação da Sprint 4 
+(10 pontos ): 
+· Capa com o nome dos integrantes, nome da equipe e nome da solução. 
+· Sumário. 
+· Objetivo e escopo do projeto: descrever a solução proposta pelo grupo de forma objetiva. 
+· Breve descrição das principais funcionalidades da solução. 
+· Diagrama do Modelo Relacional feito no Data Modeler da Oracle. 
+2. Script – D.Q.L.  – Consultas gerais  (90 pontos )
+Script com instruções "SELECT" para extrair dados das tabelas. Deve ser elaborada várias consultas  que tragam informações 
+obrigatórias como: 
+·  Cálculo do índice de Massa Corporal dos pacientes com base nos campos de peso e altura. 
+·  Relatórios dos atendimentos realizados, aplicando ﬁltros combinados: por médico, colaborador, data, status e procedimentos. 
+·  Volume de atendimentos e demonstração da ociosidade. 
+·  Cálculo do tempo de entrada do lead até o seu primeiro atendimento. 
+· Histórico da conta do paciente que interligue as informações de agendamento, vendas e recepção. 
+DATABASE DESIGN 
+Formato de Entrega da Sprint 4 :
+·  O item 1  deve constar no arquivo pdf. 
+·  O item 2  (Scripts  SQL – DQL ) – Atualização do script anterior (Script 3), integrando e detalhando a sessão de consultas feitas nesse 
+sprint (DQL). O arquivo único enviado deve ser editável com "Bloco de Notas" ou editor equivalente para código-fonte, com 
+extensão ".SQL", devidamente documentado. 
+ 
+Atenção : O grupo que enviar apenas as consultas não terá pontos na Sprint 4, uma vez que não será possível testá-las sem as 
+tabelas e inserção de dados feitas na Sprint 3. 
+ 
+Todos os arquivos devem ser compactados em um único arquivo ".zip", que será entregue por um integrante do grupo via Microsoft 
+Teams. 
+OBS : Não inclua links para diagramas em nuvem. 
+DYNAMIC PROGRAMMING 
+Sprint 3 — Recursão e Memoização no CRM 
+Objetivo: Modelar o problema de duplicidade de leads e cadastros e otimizar a busca de combinações e veriﬁcações repetidas. 
+Quando novos leads chegam ao sistema, eles podem já existir no banco de dados. O sistema deve veriﬁcar duplicidade com base em informações 
+como: nome, telefone, e-mail e CPF. Implementar funções que façam essa validação e explorem combinações possíveis de comparação. 
+Tarefa 1 — Veriﬁcação recursiva de duplicidade: Criar uma função recursiva que percorra uma lista de cadastros e veriﬁque se um novo lead já existe 
+(2,5). 
+Tarefa 2 — Uso de memoização: Aplicar memoização para evitar repetir comparações entre leads e cadastros já analisados (2,5). 
+Tarefa 3 — Otimização de agenda com subproblemas: Criar uma função recursiva para calcular o melhor encaixe de horários disponíveis de um médico 
+em determinado dia, evitando recalcular os mesmos intervalos (2,5). 
+Apresentar o código em python, bem como a documentação do projeto no github (2,5). 
+Sprint 4 — Grafos e Dijkstra no CRM 
+Objetivo: Modelar o ﬂuxo do CRM como um grafo e encontrar o melhor caminho entre etapas do processo usando Dijkstra. 
+Tarefa 1 — Representar o ﬂuxo como grafo: transformar o ﬂuxo do CRM em um grafo direcionado. (2,5) 
+Tarefa 2 — Implementar o algoritmo de Dijkstra: Criar uma função que encontre o menor caminho entre Lead → Conﬁrmação (2,5). 
+Tarefa 3 — Interpretar o resultado: Explicar qual foi o menor caminho encontrado. Qual o custo total e Por que esse ﬂuxo é mais eﬁciente? (2,5) 
+Apresentar o código em python, bem como a documentação do projeto no github (2,5). 
+NETWORK ARCHITECT SOLUTIONS (1/2) 
+Sprint 3 – Projeto da Arquitetura de Rede 
+-Planejar a infraestrutura de rede que suportará o CRM do Hospital São Rafael, considerando os setores do hospital e o ﬂuxo de dados 
+entre eles. Criar uma topologia lógica da rede no Cisco Packet Tracer, conectando os setores necessários para o funcionamento do 
+sistema CRM. 
+-O grupo deve deﬁnir pelo menos 5 setores relevantes para o funcionamento do CRM. 
+-Devem usar dispositivos adequados para cada função 
+-A rede deve respeitar alguns pontos como hierarquia lógica, interligação entre setores, nomeação clara dos dispositivos e organização 
+visual no Packet Tracer 
+-Entregar um .pkt com a topologia e um .pdf com um descritivo geral 
+Sprint 4 – Implementação e Conﬁguração da Rede 
+-Evolução da arquitetura para rede funcional, basicamente conﬁgurar a rede planejada na Sprint 3 para permitir comunicação entre os 
+setores e acesso ao sistema CRM. 
+-Criação de planos de endereçamento 
+-Conﬁguração de IP nos hosts, interface nos roteadores, gateways e VLANs se houver 
+-Testes de Comunicação entre os setores 
+-Entregar um .pkt com a topologia e um .pdf com um descritivo geral, incluindo prints dos testes de conexão 
+SCRUM MASTER 
+LUCIANA PAV ANELLI 
+EMAIL: proﬂuciana.pavanelli@ﬁap.com.br OBRIGADA !!! 
