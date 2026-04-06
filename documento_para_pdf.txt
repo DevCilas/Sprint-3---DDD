@@ -1,0 +1,17 @@
+Nomes dos Integrantes e RM:
+- Cilas Pinto Macedo - RM 560745
+- Ian Junji Maluvayshi Matsushita - RM 560588
+- Pedro Arão Baquini - RM 559580
+- Leandro Kamada Pesce Dimov - RM 560381
+
+Descrição da Solução e Funcionalidades do Projeto - Hospital São Rafael (Sprint 3)
+
+O presente projeto implementa a arquitetura de persistência e acesso a dados para o novo CRM do Hospital São Rafael, focado na gestão comercial e de agendamentos das cirurgias. Atendendo aos requisitos da Sprint 3 da disciplina de Domain Driven Design e alinhado aos padrões arquiteturais de injeção de dependências do framework Spring Boot (na versão 3.4.x), a solução emprega a biblioteca Spring Data JDBC aliada a conectividade de banco de dados Oracle autogerida visando criar os fluxos da base do nosso projeto, de forma rápida, robusta e modularizada.
+
+A aplicação se propõe a resolver problemas centrais relacionados à organização conturbada revelada nos problemas da Challenge, definindo três domínios e entidades principais (Lead, Paciente e Agendamento), separados conceitualmente no projeto e suportados pelo design pattern DAO/Repository, atuando como interfaces para cada modelo frente a requisições do sistema sem expor as lógicas primárias para a parte visual do programa. 
+
+A primeira funcionalidade chave lida com a atração dos pacientes: o módulo de Leads. Ele captura os prospects das mídias sociais (Facebook, Instagram) registrando as intenções preliminares deles e atuando rigorosamente evitando as redundâncias geradas nestas plataformas por disparos automáticos. Para alcançar tal validação, o cadastro do lead averigua previamente com blocos condicionais se o e-mail ou o celular submetidos já não habitam a base, e barra o insert com Exceptions de duplicidade desenhadas customizadamente.
+
+A segunda funcionalidade trata do fluxo natural após a captação que é a oficialização dos dados do indivíduo: o Cadastro de Paciente. Além de garantir a unicidade pelo CPF na base por meios da verificação e validação no banco, a lógica do Service embute imediatamente no paciente uma checagem do quadro base e índice de saúde daquele usuário, pegando parâmetros físicos enviados e devolvendo um cálculo imediato validado segundo protocolos da Organização Mundial de Saúde estipulando e validando se o indivíduo está normalizado ou em determinado estágio de obesidade, facilitando nas descrições de atendimento.
+
+A terceira funcionalidade fia-se ao cerne e fonte limitante do modelo de negócios do hospital: as reservas de horário. O módulo de agendamento não aceita em hipótese alguma que médicos ou salas entrem em conflito em decorrência do erro de funcionários do sistema, dessa maneira um paciente não poderá sobrecarregar mais de um escopo na mesma hora. Também se certifica a proteção das diretrizes de progresso do atendimento, sendo assim consultas finalizadas ou formalmente canceladas adquirem o rótulo de imutáveis, blindando o banco da instituição de eventuais perdas inestimáveis do histórico do paciente.
