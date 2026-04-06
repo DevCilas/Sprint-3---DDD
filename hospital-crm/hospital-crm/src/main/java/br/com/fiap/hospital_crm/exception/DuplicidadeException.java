@@ -1,9 +1,6 @@
 package br.com.fiap.hospital_crm.exception;
 
-/**
- * Exceção lançada quando se tenta cadastrar uma entidade que já existe no sistema.
- * Aplicável para Leads (duplicidade por e-mail/telefone) e Pacientes (duplicidade por CPF).
- */
+// exception pra quando tentar cadastrar algo que ja existe
 public class DuplicidadeException extends RuntimeException {
 
     public DuplicidadeException(String mensagem) {

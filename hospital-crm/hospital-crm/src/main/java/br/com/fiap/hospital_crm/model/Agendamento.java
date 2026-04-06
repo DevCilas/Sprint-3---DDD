@@ -7,10 +7,6 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-/**
- * Entidade que representa um Agendamento de consulta no CRM do Hospital São Rafael.
- * Associa um paciente a uma data, horário, procedimento e status.
- */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -23,7 +19,6 @@ public class Agendamento {
     private String procedimento;
     private String status; // agendado, atendido, falta, abandono, reagendado, cancelado
 
-    // Construtor sem ID (para inserção)
     public Agendamento(Long pacienteId, LocalDate dataAgendamento, LocalTime hora,
                        String procedimento, String status) {
         this.pacienteId = pacienteId;

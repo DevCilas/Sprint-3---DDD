@@ -16,11 +16,6 @@ import org.springframework.context.annotation.Bean;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-/**
- * Classe principal do CRM Hospital São Rafael.
- * Contém a Zona de Testes (CommandLineRunner) com testes hardcoded
- * para demonstrar as regras de negócio implementadas.
- */
 @SpringBootApplication
 public class HospitalCrmApplication {
 
@@ -28,22 +23,19 @@ public class HospitalCrmApplication {
 		SpringApplication.run(HospitalCrmApplication.class, args);
 	}
 
-	/**
-	 TESTES
-	 */
+	// zona de testes - roda quando a aplicacao inicia
 	@Bean
 	CommandLineRunner zonaDeTestes(LeadService leadService,
 								  PacienteService pacienteService,
 								  AgendamentoService agendamentoService) {
 		return args -> {
 
-			System.out.println("=============================================================");
-			System.out.println("  CRM HOSPITAL SÃO RAFAEL - ZONA DE TESTES (Sprint 3)");
-			System.out.println("=============================================================\n");
+			System.out.println("====================================");
+			System.out.println("  CRM Hospital São Rafael - Testes");
+			System.out.println("====================================\n");
 
-
-			// TESTE 1: Cadastro de Lead com sucesso
-			System.out.println("--- TESTE 1: Cadastro de Lead ---");
+			// teste 1 - cadastrar lead
+			System.out.println(">> Teste 1: Cadastro de Lead");
 			try {
 				Lead lead1 = new Lead(
 						"Maria Silva",
@@ -54,51 +46,49 @@ public class HospitalCrmApplication {
 						"Dr. Carlos Mendes"
 				);
 				leadService.cadastrarLead(lead1);
-				System.out.println("[OK] Lead cadastrado com sucesso: " + lead1.getNome());
-				System.out.println("     Canal: " + lead1.getCanalEntrada());
-				System.out.println("     Procedimento: " + lead1.getProcedimentoInteresse());
+				System.out.println("Lead cadastrado: " + lead1.getNome());
 			} catch (Exception e) {
-				System.out.println("[ERRO] " + e.getMessage());
+				System.out.println("Erro: " + e.getMessage());
 			}
 
-			// TESTE 2: Tentativa de Lead duplicado (email)
-			System.out.println("\n--- TESTE 2: Lead Duplicado (mesmo e-mail) ---");
+			// teste 2 - lead duplicado por email
+			System.out.println("\n>> Teste 2: Lead duplicado (email)");
 			try {
-				Lead leadDuplicado = new Lead(
+				Lead leadDup = new Lead(
 						"Maria Aparecida",
 						"(11) 88888-2222",
-						"maria.silva@email.com",  // mesmo e-mail do teste 1
+						"maria.silva@email.com",
 						"Facebook",
 						"Lipoaspiração",
 						null
 				);
-				leadService.cadastrarLead(leadDuplicado);
-				System.out.println("[FALHA] Deveria ter lançado exceção de duplicidade!");
+				leadService.cadastrarLead(leadDup);
+				System.out.println("Erro - deveria ter dado duplicidade");
 			} catch (DuplicidadeException e) {
-				System.out.println("[OK] Duplicidade detectada corretamente: " + e.getMessage());
+				System.out.println("OK - " + e.getMessage());
 			}
 
-			// TESTE 3: Tentativa de Lead duplicado (telefone)
-			System.out.println("\n--- TESTE 3: Lead Duplicado (mesmo telefone) ---");
+			// teste 3 - lead duplicado por telefone
+			System.out.println("\n>> Teste 3: Lead duplicado (telefone)");
 			try {
-				Lead leadDuplicadoTel = new Lead(
+				Lead leadDup2 = new Lead(
 						"José Santos",
-						"(11) 99999-1111",  // mesmo telefone do teste 1
+						"(11) 99999-1111",
 						"jose@email.com",
 						"Google",
 						"Blefaroplastia",
 						null
 				);
-				leadService.cadastrarLead(leadDuplicadoTel);
-				System.out.println("[FALHA] Deveria ter lançado exceção de duplicidade!");
+				leadService.cadastrarLead(leadDup2);
+				System.out.println("Erro - deveria ter dado duplicidade");
 			} catch (DuplicidadeException e) {
-				System.out.println("[OK] Duplicidade detectada corretamente: " + e.getMessage());
+				System.out.println("OK - " + e.getMessage());
 			}
 
-			// TESTE 4: Cadastro de Paciente com sucesso + Cálculo de IMC
-			System.out.println("\n--- TESTE 4: Cadastro de Paciente + Cálculo de IMC ---");
+			// teste 4 - cadastrar paciente e calcular imc
+			System.out.println("\n>> Teste 4: Cadastro de Paciente + IMC");
 			try {
-				Paciente paciente1 = new Paciente(
+				Paciente pac1 = new Paciente(
 						"João Pedro Oliveira",
 						"123.456.789-00",
 						LocalDate.of(1985, 3, 15),
@@ -109,118 +99,98 @@ public class HospitalCrmApplication {
 						"(11) 97777-3333",
 						"Instagram"
 				);
-				pacienteService.cadastrarPaciente(paciente1);
-				System.out.println("[OK] Paciente cadastrado com sucesso: " + paciente1.getNome());
-
-				// Cálculo do IMC
-				String resultadoIMC = pacienteService.calcularIMC(paciente1);
-				System.out.println("[OK] " + resultadoIMC);
+				pacienteService.cadastrarPaciente(pac1);
+				System.out.println("Paciente cadastrado: " + pac1.getNome());
+				System.out.println(pacienteService.calcularIMC(pac1));
 			} catch (Exception e) {
-				System.out.println("[ERRO] " + e.getMessage());
+				System.out.println("Erro: " + e.getMessage());
 			}
 
-			// TESTE 5: Tentativa de Paciente duplicado (CPF)
-			System.out.println("\n--- TESTE 5: Paciente Duplicado (mesmo CPF) ---");
+			// teste 5 - paciente com cpf duplicado
+			System.out.println("\n>> Teste 5: Paciente duplicado (CPF)");
 			try {
-				Paciente pacienteDuplicado = new Paciente(
+				Paciente pacDup = new Paciente(
 						"João P. Oliveira",
-						"123.456.789-00",  // mesmo CPF do teste 4
+						"123.456.789-00",
 						LocalDate.of(1985, 3, 15),
 						"Masculino",
 						80.0,
 						1.75,
-						"joao.duplicado@email.com",
+						"joao.dup@email.com",
 						"(11) 96666-4444",
 						"Google"
 				);
-				pacienteService.cadastrarPaciente(pacienteDuplicado);
-				System.out.println("[FALHA] Deveria ter lançado exceção de duplicidade!");
+				pacienteService.cadastrarPaciente(pacDup);
+				System.out.println("Erro - deveria ter dado duplicidade");
 			} catch (DuplicidadeException e) {
-				System.out.println("[OK] Duplicidade detectada corretamente: " + e.getMessage());
+				System.out.println("OK - " + e.getMessage());
 			}
 
-			// TESTE 6: Cálculo de IMC com diferentes classificações
-			System.out.println("\n--- TESTE 6: Diferentes Classificações de IMC ---");
-			Paciente pacienteMagro = new Paciente();
-			pacienteMagro.setPeso(50.0);
-			pacienteMagro.setAltura(1.80);
-			System.out.println("  Paciente magro -> " + pacienteService.calcularIMC(pacienteMagro));
+			// teste 6 - imc com valores diferentes
+			System.out.println("\n>> Teste 6: IMC - classificacoes");
+			Paciente magro = new Paciente();
+			magro.setPeso(50.0);
+			magro.setAltura(1.80);
+			System.out.println("Magro: " + pacienteService.calcularIMC(magro));
 
-			Paciente pacienteObeso = new Paciente();
-			pacienteObeso.setPeso(110.0);
-			pacienteObeso.setAltura(1.65);
-			System.out.println("  Paciente obeso -> " + pacienteService.calcularIMC(pacienteObeso));
+			Paciente obeso = new Paciente();
+			obeso.setPeso(110.0);
+			obeso.setAltura(1.65);
+			System.out.println("Obeso: " + pacienteService.calcularIMC(obeso));
 
-
-			// TESTE 7: Agendamento de Consulta com sucesso
-
-			System.out.println("\n--- TESTE 7: Agendamento de Consulta ---");
+			// teste 7 - agendar consulta
+			System.out.println("\n>> Teste 7: Agendamento");
 			try {
-				Agendamento agendamento1 = new Agendamento(
-						1L,  // paciente_id (usar o ID do paciente cadastrado)
+				Agendamento ag1 = new Agendamento(
+						1L,
 						LocalDate.of(2026, 4, 10),
 						LocalTime.of(14, 30),
 						"Rinoplastia - Consulta Inicial",
 						"agendado"
 				);
-				agendamentoService.agendarConsulta(agendamento1);
-				System.out.println("[OK] Consulta agendada com sucesso!");
-				System.out.println("     Data: " + agendamento1.getDataAgendamento());
-				System.out.println("     Hora: " + agendamento1.getHora());
-				System.out.println("     Procedimento: " + agendamento1.getProcedimento());
-				System.out.println("     Status: " + agendamento1.getStatus());
+				agendamentoService.agendarConsulta(ag1);
+				System.out.println("Consulta agendada: " + ag1.getDataAgendamento() + " " + ag1.getHora());
 			} catch (Exception e) {
-				System.out.println("[ERRO] " + e.getMessage());
+				System.out.println("Erro: " + e.getMessage());
 			}
 
-
-			// TESTE 8: Conflito de horário no agendamento
-
-			System.out.println("\n--- TESTE 8: Conflito de Horário ---");
+			// teste 8 - conflito de horario
+			System.out.println("\n>> Teste 8: Conflito de horario");
 			try {
-				Agendamento agendamentoDuplicado = new Agendamento(
+				Agendamento ag2 = new Agendamento(
 						1L,
-						LocalDate.of(2026, 4, 10),  // mesma data
-						LocalTime.of(14, 30),        // mesmo horário
-						"Blefaroplastia - Consulta",
+						LocalDate.of(2026, 4, 10),
+						LocalTime.of(14, 30),
+						"Blefaroplastia",
 						"agendado"
 				);
-				agendamentoService.agendarConsulta(agendamentoDuplicado);
-				System.out.println("[FALHA] Deveria ter lançado exceção de conflito!");
+				agendamentoService.agendarConsulta(ag2);
+				System.out.println("Erro - deveria ter dado conflito");
 			} catch (ConflitoDeHorarioException e) {
-				System.out.println("[OK] Conflito detectado corretamente: " + e.getMessage());
+				System.out.println("OK - " + e.getMessage());
 			}
 
-
-			// TESTE 9: Atualização de status do agendamento
-
-			System.out.println("\n--- TESTE 9: Atualização de Status ---");
+			// teste 9 - mudar status pra atendido
+			System.out.println("\n>> Teste 9: Mudar status");
 			try {
 				agendamentoService.atualizarStatus(1L, "atendido");
-				System.out.println("[OK] Status atualizado para 'atendido'.");
+				System.out.println("Status atualizado pra atendido");
 			} catch (Exception e) {
-				System.out.println("[ERRO] " + e.getMessage());
+				System.out.println("Erro: " + e.getMessage());
 			}
 
-			// TESTE 10: Tentativa de alterar status de agendamento atendido
-			System.out.println("\n--- TESTE 10: Status Imutável (atendido) ---");
+			// teste 10 - tentar mudar status de atendido (nao pode)
+			System.out.println("\n>> Teste 10: Tentar mudar status de atendido");
 			try {
 				agendamentoService.atualizarStatus(1L, "cancelado");
-				System.out.println("[FALHA] Deveria ter bloqueado a alteração!");
+				System.out.println("Erro - nao deveria deixar");
 			} catch (IllegalStateException e) {
-				System.out.println("[OK] Transição bloqueada corretamente: " + e.getMessage());
+				System.out.println("OK - " + e.getMessage());
 			}
 
-			// RESUMO
-			System.out.println("\n=============================================================");
-			System.out.println("  ZONA DE TESTES FINALIZADA");
-			System.out.println("  Regras de negócio validadas:");
-			System.out.println("  1. Cadastro de Lead com verificação de duplicidade");
-			System.out.println("  2. Cadastro de Paciente com bloqueio por CPF");
-			System.out.println("  3. Cálculo de IMC com classificação OMS");
-			System.out.println("  4. Agendamento com validação de conflito de horário");
-			System.out.println("  5. Controle de transição de status do agendamento");
-			System.out.println("=============================================================");
+			System.out.println("\n====================================");
+			System.out.println("  Testes finalizados!");
+			System.out.println("====================================");
 		};
 	}
 }

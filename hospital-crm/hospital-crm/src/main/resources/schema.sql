@@ -1,5 +1,4 @@
 
-
 -- Tabela de Leads
 CREATE TABLE T_LEAD (
     id               NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -13,10 +12,6 @@ CREATE TABLE T_LEAD (
     CONSTRAINT uk_lead_telefone UNIQUE (telefone),
     CONSTRAINT uk_lead_email    UNIQUE (email)
 );
-
-COMMENT ON TABLE T_LEAD IS 'Tabela de leads capturados via canais digitais (Instagram, Facebook, Google, TikTok)';
-COMMENT ON COLUMN T_LEAD.canal_entrada IS 'Canal de origem do lead: Instagram, Facebook, Google, TikTok, Indicacao';
-COMMENT ON COLUMN T_LEAD.procedimento_interesse IS 'Procedimento pelo qual o lead demonstrou interesse';
 
 -- Tabela de Pacientes
 CREATE TABLE T_PACIENTE (
@@ -33,11 +28,6 @@ CREATE TABLE T_PACIENTE (
     CONSTRAINT uk_paciente_cpf UNIQUE (cpf)
 );
 
-COMMENT ON TABLE T_PACIENTE IS 'Tabela de pacientes cadastrados no CRM do hospital';
-COMMENT ON COLUMN T_PACIENTE.cpf IS 'CPF do paciente - campo unico para evitar duplicidade';
-COMMENT ON COLUMN T_PACIENTE.peso IS 'Peso do paciente em kg para calculo de IMC';
-COMMENT ON COLUMN T_PACIENTE.altura IS 'Altura do paciente em metros para calculo de IMC';
-
 -- Tabela de Agendamentos
 CREATE TABLE T_AGENDAMENTO (
     id                NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -49,7 +39,3 @@ CREATE TABLE T_AGENDAMENTO (
     CONSTRAINT fk_agendamento_paciente FOREIGN KEY (paciente_id) REFERENCES T_PACIENTE(id),
     CONSTRAINT ck_agendamento_status CHECK (status IN ('agendado','atendido','falta','abandono','reagendado','cancelado'))
 );
-
-COMMENT ON TABLE T_AGENDAMENTO IS 'Tabela de agendamentos de consultas medicas';
-COMMENT ON COLUMN T_AGENDAMENTO.status IS 'Status do agendamento: agendado, atendido, falta, abandono, reagendado, cancelado';
-COMMENT ON COLUMN T_AGENDAMENTO.paciente_id IS 'Chave estrangeira referenciando o paciente';

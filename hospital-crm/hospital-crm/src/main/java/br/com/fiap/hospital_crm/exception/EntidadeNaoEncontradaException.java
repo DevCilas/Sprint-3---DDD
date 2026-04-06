@@ -1,9 +1,6 @@
 package br.com.fiap.hospital_crm.exception;
 
-/**
- * Exceção lançada quando uma entidade não é encontrada no banco de dados.
- * Aplicável para buscas por ID de Lead, Paciente ou Agendamento.
- */
+// exception pra quando nao encontrar no banco
 public class EntidadeNaoEncontradaException extends RuntimeException {
 
     public EntidadeNaoEncontradaException(String mensagem) {
